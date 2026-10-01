@@ -104,3 +104,21 @@ def delete_todo(id):
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
+# GET All Tasks
+curl http://127.0.0.1:5000/todos
+
+# POST (Create)
+curl -X POST http://127.0.0.1:5000/todos -H "Content-Type: application/json" -d "{\"title\":\"Complete REST API Assignment\"}"
+
+# PUT (Update)
+curl -X PUT http://127.0.0.1:5000/todos/1 -H "Content-Type: application/json" -d "{\"title\":\"Learn Flask API\",\"completed\":true}"
+
+# DELETE
+curl -X DELETE http://127.0.0.1:5000/todos/1
+
+# Verify Deletion
+curl http://127.0.0.1:5000/todos
+
+
