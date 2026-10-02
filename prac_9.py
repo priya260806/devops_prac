@@ -24,3 +24,4 @@ Right-click Databases → Create → Database
 # Use:
 Database: studentdb2
 # Then click Save.
+
